@@ -28,9 +28,9 @@
     <a href="#getting-started"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://www.youtube.com/watch?v=QSWg1JPAXUI" target="_blank">View Demo</a>
+    <a href="" target="_blank">View Demo</a>
     ·
-    <a href="" target="_blank">Demonstration Video</a>
+    <a href="https://www.youtube.com/watch?v=QSWg1JPAXUI" target="_blank">Demonstration Video</a>
     ·
     <a href="https://github.com/felmez/user-listing/issues">Report Bug</a>
     ·
@@ -81,11 +81,8 @@ There is also custom rate limiting (See: <a href="https://en.wikipedia.org/wiki/
     <br />
     <img src="https://github.com/felmez/user-listing/blob/main/readme_assets/111.gif" />
     <br />
-    <img src="" />
+    <img src="https://github.com/felmez/user-listing/blob/main/readme_assets/222.gif" />
     <br />
-    <img src="" />
-    <br />
-    <img src="" />
 </p>
 
 
@@ -160,12 +157,11 @@ client branch (client directory) for client side (react)
 
     ```
         module.exports = {
-        MONGODB: 'mongodb+srv://<username>:<password>@<clustername>.<linkprefix>.mongodb.net/<dbname>?retryWrites=true&w=majority',
-        SECRET_KEY: 'some very secret key'
+        MONGODB: 'mongodb+srv://<username>:<password>@<clustername>.<linkprefix>.mongodb.net/<dbname>?retryWrites=true&w=majority'
         } 
     ```
 
-    3.3 - change the URI to your own MongoDB string you can keep secret key empty
+    3.3 - change the URI to your own MongoDB string
 
   } else if (you will use some SaaS hosting services like heroku, netlify etc){
     use process.ENV configurations depending on your service type
