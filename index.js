@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 const typeDefs = require('./graphql/types');
 const resolvers = require('./graphql/resolvers/')
-const { MONGODB } = require('./config.js') || process.env.MONGODB_URI;
+const MONGODB = process.env.MONGODB_URI;
 const PORT = process.env.PORT || 5000;
 
 
