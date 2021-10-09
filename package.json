@@ -1,32 +1,45 @@
 {
-  "name": "user-listing",
-  "version": "1.0.0",
-  "description": "mern based user listing app",
-  "main": "index.js",
-  "scripts": {
-    "serve": "nodemon index.js",
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/felmez/user-listing.git"
-  },
-  "author": "souhaib felmez",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/felmez/user-listing/issues"
-  },
-  "homepage": "https://github.com/felmez/user-listing#readme",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "apollo-server": "^3.3.0",
-    "bcrypt": "^5.0.1",
+    "@apollo/client": "^3.4.16",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "graphql": "^15.6.1",
-    "graphql-rate-limit": "^3.1.0",
-    "graphql-shield": "^7.5.0",
-    "mongoose": "^6.0.9"
+    "limiter": "^2.1.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.4",
+    "web-vitals": "^1.0.1"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.13"
-  }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "https://userlistinga.herokuapp.com/"
 }

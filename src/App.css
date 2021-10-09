@@ -1,0 +1,23 @@
+.ui.attached.menu:not(.tabular) {
+  border: 0 !important;
+}
+
+/* input{
+  margin-bottom: 10px !important;
+  height: 20px;
+  border: 1px solid #d8d8d8;
+  padding: 3px;
+}
+
+button{
+  padding: 10px;
+  border: 1px solid #d8d8d8;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+
+.error{
+  margin-left: 5px;
+  font-size: 13px;
+  color: red;
+} */
