@@ -28,7 +28,7 @@
     <a href="#getting-started"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="" target="_blank">View Demo</a>
+    <a href="https://www.youtube.com/watch?v=QSWg1JPAXUI" target="_blank">View Demo</a>
     ·
     <a href="" target="_blank">Demonstration Video</a>
     ·
@@ -77,9 +77,9 @@ There is also custom rate limiting (See: <a href="https://en.wikipedia.org/wiki/
 
 
 <p align="center">
-    <img src="" />
+    <img src="https://github.com/felmez/user-listing/blob/main/readme_assets/000.gif" />
     <br />
-    <img src="" />
+    <img src="https://github.com/felmez/user-listing/blob/main/readme_assets/111.gif" />
     <br />
     <img src="" />
     <br />
