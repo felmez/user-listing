@@ -223,7 +223,7 @@ Souhaib Felmez
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/felmez/user-listings.svg?style=flat-square
-[license-url]: https://github.com/felmez/user-listing/blob/master/LICENSE
+[license-url]: https://github.com/felmez/user-listing/blob/main/LICENSE
 [freecodecamp-shield]: https://img.shields.io/badge/-freecodecamp-black?style=flat-square&logo=freecodecamp
 [freecodecamp-url]: https://www.freecodecamp.org/
 [google-shield]: https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white
