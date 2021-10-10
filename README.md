@@ -28,7 +28,7 @@
     <a href="#getting-started"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="" target="_blank">View Demo</a>
+    <a href="https://naughty-varahamihira-bbde39.netlify.app/" target="_blank">View Demo</a>
     ·
     <a href="https://www.youtube.com/watch?v=QSWg1JPAXUI" target="_blank">Demonstration Video</a>
     ·
@@ -96,8 +96,8 @@ There is also custom rate limiting (See: <a href="https://en.wikipedia.org/wiki/
 
 ### Demo
 
-* Client (frontend) link: [![netlify-shield]]()
-* Server (backend) link: [![heroku-shield]]()
+* Client (frontend) link: [![netlify-shield]](https://naughty-varahamihira-bbde39.netlify.app/)
+* Server (backend) link: [![heroku-shield]](https://userlistinga.herokuapp.com/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
