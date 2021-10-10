@@ -8,7 +8,7 @@ module.exports.validateCreateInput = (
     const errors = {};
 
     const emailRegEx = /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/;
-    const eduRegEx = /[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])+@[0-9a-zA-Z][-\w]*[0-9a-zA-Z]+\.edu\.[a-zA-Z]+/i;
+    const eduRegEx = /^\.edu\.(?!\s)[a-zA-Z]|\.edu(?!\s)+/;
     const isValidEmail = email.match(emailRegEx);
     const isEduEmail = email.match(eduRegEx);
     const isAcademic = role.trim() === 'öğrenci' || role.trim() === 'görevli';
