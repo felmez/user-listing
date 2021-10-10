@@ -125,3 +125,7 @@ client/.vscode/settings.json
 ### Lock files ###
 yarn.lock
 package-lock.json
+
+### branch merge care
+readme_assets
+*.md
