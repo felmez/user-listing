@@ -1,17 +1,4 @@
 [![license-shield]][license-url]
-[![html-shield]][html-url]
-[![css-shield]][css-url]
-[![mongodb-shield]][mongodb-url]
-[![express-shield]][express-url]
-[![react-shield]][react-url]
-[![nodejs-shield]][nodejs-url]
-[![graphql-shield]][graphql-url]
-[![apollo-shield]][apollo-url]
-[![heroku-shield]][heroku-url]
-[![netlify-shield]][netlify-url]
-[![git-shield]][git-url]
-[![github-shield]][github-url]
-
 
 
 <!-- PROJECT LOGO -->
@@ -93,6 +80,9 @@ There is also custom rate limiting (See: <a href="https://en.wikipedia.org/wiki/
 * [![react-shield]][react-url]
 * [![nodejs-shield]][nodejs-url]
 * [![graphql-shield]][graphql-url]
+* [![apollo-shield]][apollo-url]
+* [![html-shield]][html-url]
+* [![css-shield]][css-url]
 
 ### Demo
 
