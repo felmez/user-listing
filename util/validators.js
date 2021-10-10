@@ -14,12 +14,18 @@ module.exports.validateCreateInput = (
     const isAcademic = role.trim() === 'öğrenci' || role.trim() === 'görevli';
     const isNormal = role.trim() === 'normal';
 
-    if (name.trim() === '') {
+    function checkEmpty(field) {
+        if (field.trim() === '') {
+            return true;
+        }
+    }
+
+    if (checkEmpty(name)) {
         errors.name = 'İsim alanı boş olamaz';
     }
 
 
-    if (email.trim() === '') {
+    if (checkEmpty(email)) {
         errors.email = 'Email alanı boş olamaz';
     } else {
         if (!isValidEmail) {
@@ -28,7 +34,7 @@ module.exports.validateCreateInput = (
     }
 
 
-    if (role.trim() === '') {
+    if (checkEmpty(role)) {
         errors.role = 'Kayıt tipi boş olamaz';
     } else if (isValidEmail && isEduEmail && !isAcademic) {
         errors.role = 'Kayıt tipi "öğrenci" ya da "görevli" olarak girilmelidir';
@@ -38,7 +44,7 @@ module.exports.validateCreateInput = (
 
 
 
-    if (password === '') {
+    if (checkEmpty(password)) {
         errors.password = 'Şifre alanı boş olamaz';
     } else if (password !== confirmPassword) {
         errors.confirmPassword = 'Şifreler eşleşmiyor'
