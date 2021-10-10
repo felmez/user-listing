@@ -172,6 +172,33 @@ client branch (client directory) for client side (react)
   on client branch/directory => 
   'npm start'
   ```
+5. Sample GraphQL requests
+  ```
+    query Query {
+      getUsers {
+        email
+        id
+        name
+      } 
+    }
+
+
+    mutation Mutation{
+      createUser(createInput:{
+        name: "john doee"
+        email: "johnnny@idkk.com"
+        role: "normal"
+        password: "New12345@"
+        confirmPassword: "New12345@"
+      })
+      {
+        id
+        name
+        email
+        role
+      }
+    }
+```
 
 
 
