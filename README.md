@@ -1,6 +1,3 @@
-[![license-shield]][license-url]
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -186,6 +183,7 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- LICENSE -->
 ## License
+[![license-shield]][license-url]
 
 Distributed under the MIT License. See `LICENSE` for more information.
 

@@ -42,6 +42,15 @@ export default function UserForm() {
         confirmPassword: ''
     })
 
+    function resetInputs() {
+        setErrors({});
+        values.name = '';
+        values.email = '';
+        values.role = '';
+        values.password = '';
+        values.confirmPassword = '';
+    }
+
     const [createUser, { loading }] = useMutation(CREATE_USER_MUTATION, {
         variables: values,
         update(proxy, result) {
@@ -54,18 +63,10 @@ export default function UserForm() {
                     getUsers: [result.data.createUser, ...data.getUsers],
                 },
             });
-            values.name = '';
-            values.email = '';
-            values.role = '';
-            values.password = '';
-            values.confirmPassword = '';
-            // window.location.reload(false);
+            resetInputs()
         },
         onError(err) {
-            // if (err.graphQLErrors[0].extensions.exception.isRateLimitError === false) {
-            // setErrors(err.graphQLErrors[0].message);
             setErrors(err.graphQLErrors[0].extensions.errors);
-            // }
         },
     })
 
