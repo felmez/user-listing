@@ -55,7 +55,7 @@
 ## About The Project
 
 This is a basic user listing app where you can create new users using GraphQL Mutation (See: <a href="https://graphql.org/learn/queries/" target="_blank">GraphQL Mutations and Queries</a>
-) and fetch them using Query but also having the server-side form and input validations like empty fields, wrong user role, not matching passwords, format validation, and already used email check and. 
+) and fetch them using Query but also having the server-side form and input validations like empty fields, wrong user role, not matching passwords, format validation, and already used email check. 
 There is also custom rate limiting (See: <a href="https://en.wikipedia.org/wiki/Rate_limiting" target="_blank">Rate Limiting</a>
 ) configure so users can not create too many users in a limited time which may prevent or limit the server costs and also enhance security.
 
