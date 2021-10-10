@@ -73,25 +73,38 @@ module.exports = {
 
             // counting waiting seconds just for error display and better UX
             const secondsCounting = function () {
-                setInterval(function () {
-                    reqSeconds--;
+                let interval;
+                interval = setInterval(function () {
+                    if (isZero(reqSeconds)) {
+                        clearInterval(interval)
+                    } else {
+                        reqSeconds--;
+                    }
                 }, 1000);
+            }
+
+            function isZero(field) {
+                if (field == 0) {
+                    return true;
+                } else {
+                    return false;
+                }
             }
 
             const startCounting = function () {
                 let interval;
                 interval = setInterval(function () {
                     // while waiting did not started because only one rate has been used in the same 10 seconds therefore reset rate and limit
-                    if (reqLimit == 0 && reqRate == 1) {
+                    if (isZero(reqLimit) && reqRate == 1) {
                         resetReqLimit();
                         resetReqRate();
                         clearInterval(interval);
-                    }
-                    // while waiting started and all rates has been used in the same 10 seconds
-                    if (reqLimit == 0) {
+                        // while waiting started and all rates has been used in the same 10 seconds
+                    } else if (isZero(reqLimit)) {
                         clearInterval(interval);
+                    } else {
+                        reqLimit--;
                     }
-                    reqLimit--;
                 }, 1000);
             };
 
@@ -110,12 +123,12 @@ module.exports = {
             if (res) {
                 if (reqRate == 2) {
                     // start timer when is the first request is successful
+                    reqRate--;
                     startCounting()
-                    reqRate--;
                 } else if (reqRate == 1 && reqLimit < 10) {
-                    // start the waiting when the seconds request is successful in the same 10 seconds
-                    startWaiting()
+                    // start the waiting when the second request is successful in the same 10 seconds
                     reqRate--;
+                    startWaiting()
                     secondsCounting()
                 }
             }
