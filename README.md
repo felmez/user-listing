@@ -138,17 +138,24 @@ client branch (client directory) for client side (react)
 3. Create environment variables
   ```sh
   if (you will serve on localhost) {
-    3.1 - on main branch/directory create config.js file 
+    if (on main branch/directory) {
+      3.1 - create config.js file 
 
-    3.2 - paste the follow code 
+      3.2 - paste the follow code 
 
-    ```
-        module.exports = {
-        MONGODB: 'mongodb+srv://<username>:<password>@<clustername>.<linkprefix>.mongodb.net/<dbname>?retryWrites=true&w=majority'
-        } 
-    ```
+        ```
+            module.exports = {
+            MONGODB: 'mongodb+srv://<username>:<password>@<clustername>.<linkprefix>.mongodb.net/<dbname>?retryWrites=true&w=majority'
+            } 
+        ```
 
-    3.3 - change the URI to your own MongoDB string
+      3.3 - change the URI strings to your own MongoDB credentials
+    }
+
+    if (on client branch/directory) {
+      3.4 - on ApolloProvider.js change uri to your server link
+    }
+    
 
   } else if (you will use some SaaS hosting services like heroku, netlify etc){
     use process.ENV configurations depending on your service type
