@@ -137,6 +137,15 @@ module.exports = {
                 ...res._doc,
                 id: res._id
             }
+        },
+        async deleteUser(_, { userID }) {
+            try {
+                const user = await User.findById(userID);
+                await user.delete();
+                return 'User deleted successfully';
+            } catch (err) {
+                throw new Error(err);
+            }
         }
     }
 }
