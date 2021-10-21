@@ -10,7 +10,7 @@ export default function Home() {
     const { loading, data: { getUsers: users } = {} } = useQuery(FETCH_USERS_QUERY);
 
     return (
-        <Grid columns={4} >
+        <Grid columns={6} >
             <Grid.Column>
                 <UserForm></UserForm>
             </Grid.Column>
@@ -26,6 +26,7 @@ export default function Home() {
                                 <Table.HeaderCell>E-mail</Table.HeaderCell>
                                 <Table.HeaderCell>Kayıt Tipi</Table.HeaderCell>
                                 <Table.HeaderCell>Kayıt Tarihi</Table.HeaderCell>
+                                <Table.HeaderCell>İşlemler</Table.HeaderCell>
                             </Table.Row>
                         </Table.Header>
                         {
