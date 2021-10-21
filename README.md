@@ -14,7 +14,7 @@
     <br />
     <a href="https://naughty-varahamihira-bbde39.netlify.app/" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/felmez/play-store-clone/tree/main/readme_assets">View GIFs</a>
+    <a href="https://github.com/felmez/user-listing/tree/main/readme_assets">View GIFs</a>
     ·
     <a href="https://www.youtube.com/watch?v=QSWg1JPAXUI" target="_blank">Demonstration Video</a>
     ·
