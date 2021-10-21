@@ -14,6 +14,8 @@
     <br />
     <a href="https://naughty-varahamihira-bbde39.netlify.app/" target="_blank">View Demo</a>
     ·
+    <a href="https://github.com/felmez/play-store-clone/tree/main/readme_assets">View GIFs</a>
+    ·
     <a href="https://www.youtube.com/watch?v=QSWg1JPAXUI" target="_blank">Demonstration Video</a>
     ·
     <a href="https://github.com/felmez/user-listing/issues">Report Bug</a>
@@ -58,17 +60,6 @@ This is a basic user listing app where you can create new users using GraphQL Mu
 ) and fetch them using Query but also having the server-side form and input validations like empty fields, wrong user role, not matching passwords, format validation, and already used email check. 
 There is also custom rate limiting (See: <a href="https://en.wikipedia.org/wiki/Rate_limiting" target="_blank">Rate Limiting</a>
 ) configure so users can not create too many users in a limited time which may prevent or limit the server costs and also enhance security.
-
-
-<p align="center">
-    <img src="https://github.com/felmez/user-listing/blob/main/readme_assets/000.gif" />
-    <br />
-    <img src="https://github.com/felmez/user-listing/blob/main/readme_assets/111.gif" />
-    <br />
-    <img src="https://github.com/felmez/user-listing/blob/main/readme_assets/222.gif" />
-    <br />
-</p>
-
 
 ### Built With
 
